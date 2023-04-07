@@ -65,8 +65,8 @@ Returns a pandas Series Object (?) that tells for each row if it is a duplicate 
 
 
 `df.replace(to_replace, value)`
-*to_replace*: list of values to be replaced
-*value*: list of values to replace the old ones
+*to_replace*: tuple of values to be replaced
+*value*: tuple of values to replace the old ones
 
   
 `df.rename(dic, axis)`
