@@ -61,7 +61,7 @@ Visually using a QQPlot to match distribution with normal distribution. (See Sea
 
 `np.corrcoef(X, Y)` to get the correlation matrix
 
-Correlation between X and Y is given by: 
+(Spearmans) Correlation between X and Y is given by: 
 
 $ r(X, Y) = \frac{cov(X, Y)}{\sigma_X \sigma_Y}$
 
@@ -71,3 +71,11 @@ $r(X, Y) \in [-1, 1]$. If $r(X, Y) \in [-0.5, 0.5]$. Generally the correlation i
 
 `df.corr()` gives the correlation of all variables in df. 
 
+### Carrying out a statistical test:
+
+1. Formulate Hypothesis h0 m = m0 for some theoretical average m0; h1 m ~ m0 for $ ~ \in \{<, >, \neq, \}$
+If the observed difference is significat we reject h0 and assert h1. *Note* If if the observed difference is not significant we can not reject h0 but we also do not assert h0. With statistical testing we never assert h0. 
+2. Choose a test and a threshold. Depending on the nature of the variables and the expected corrolation there are different tests available. We learned: 
+- ANOVA
+- $\chi^2$
+- t-test (student test)
